@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Method </title>
+</head>
+<body>
+    <h1>setInterval Method</h1>
+
+    <h4>The setInterval() method repeats a given function at every given time-interval.</h4>
+    <h3>Syntax:</h3>
+    <h4>setInterval(function, milliseconds);</h4>
+
+    <script>
+        setInterval(callme,2000);
+        function callme() {
+        alert('Welcome in ASOIT');
+        }
+        </script>
+
+<body id="mybody">
+
+</body>
+<script>
+var colors = ["red","green","blue","pink","black","orange"];
+var mybody = document.getElementById("mybody");
+var i=0;
+setInterval(()=>{
+ mybody.style.backgroundColor = colors[i];
+++i;
+ if(i==colors.length)
+ {
+i=0;
+}
+},1000)
+</script>
+
+
+    
+</body>
+</html>
