@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p5 {
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+      display: none; /* start hidden for fadeIn demo */
+      margin-top: 15px;
+      padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    Enter Age: <input type="text" id="box">
+    <button id="btn">Submit</button><br><br>
+    <span id="msg"></span>
+    <p id="p1">Lorem ipsum dolor Para 1</p>
+    <p id="p2">Lorem ipsum dolor Para 2</p>
+    <p id="p3">Lorem ipsum dolor Para 3</p>
+    <p id="p4">Lorem ipsum dolor Para 4</p>
+    <p id="p5">Hide Show Paragraph</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggleBtn">Toggel</button>
+    <button id="fadeIn">Fade-In</button>
+    <button id="fadeOut">Fade-Out</button>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script>
+        $("#btn").click(function(){
+
+            var a = $("#box").val();
+            alert(a);
+        })
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(
+            function(){
+                alert("Page Loaded!!")
+            }
+        )
+    </script> -->
+
+    <script>
+       $("#btn").click(function(){
+
+        var a = $("#box").val();
+        $("#msg").text(a);
+        $("#msg").html("<b>Your Age is</b>" + " " + a)
+
+        
+
+})
+
+$("#p1").css({
+            "color" : "red",
+            "Background-color" : "Blue"
+        });
+
+$("#p2").hide();
+$("#p2").show();
+
+
+
+$("#hide").click(function () {
+    $("#p5").hide();         
+});
+
+
+
+$("#show").click(function () {
+    $("#p5").show();          
+});
+
+
+
+$("#toggleBtn").click(function () {
+    $("#p5").toggle();       
+});
+
+$("#fadeIn").click(function(){
+    $("#p5").fadeIn();
+});
+
+$("#fadeOut").click(function(){
+    $("#p5").fadeOut();
+});
+
+
+
+    </script>
+</body>
+</html>

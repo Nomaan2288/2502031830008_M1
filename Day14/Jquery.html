@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background: lightblue;
+            padding: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+    <body>
+    <h2>jQuery Show / Hide / Toggle Example</h2>
+
+    <button id="showBtn">Show</button>
+    <button id="hideBtn">Hide</button>
+    <button id="toggleBtn">Toggle</button>
+
+    <div id="box">
+        This is a demo box for jQuery effects.
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#toggleBtn").click(function () {
+
+                // If box is visible, hide it and change text
+                if ($("#box").is(":visible")) {
+                    $("#box").hide();       // hide div
+                    $("#toggleBtn").text("Show"); // update button text
+                }
+                // If box is hidden, show it and change text
+                else {
+                    $("#box").show();       // show div
+                    $("#toggleBtn").text("Hide"); // update button text
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
