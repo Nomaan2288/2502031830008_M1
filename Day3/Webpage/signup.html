@@ -1,115 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background: linear-gradient(135deg, #4e7eff, #324fd6);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup</title>
 
-        header {
-            background-color: black ;
-            opacity: 0.7;
-            padding: 10px;
-            
-        }
+<style>
 
-        nav{
-           text-align: center;
-           justify-content: space-between;
-          
-        }
-        a{
-            text-decoration: none;
-            font-size: large;
-            color: beige;
-            margin-right: 20px;
-        }
-        .Main{
-            background: linear-gradient(135deg, #f6f8ff, #e0eafc, #f8f9fa);
-            border-radius: 5px;
-            padding: 10px;
-        }
-        h2{
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            font-size: 40px;
-            color: white;
-        }
-        footer{
-            background-color: #2c1035;
-            color: #e0eafc;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-        }
-        h1{
-            text-align: center;
-        }
-        
-        .btnn{
-            text-align: center;
-            padding: 10px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .btn{
-            background-color: gold;
-            border: 0px solid;
-            padding: 10px;
-            font-size: 15px;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
+body{
+    background:linear-gradient(135deg,#4e7eff,#324fd6);
+    min-height:100vh;
+    padding:20px;
+}
 
-        }
+header{
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    padding:15px;
+}
 
-        .btn:hover{
-            background-color: #e0eafc;
-            border: 2px solid gold;
-            transition: transform 0.3 ease;
-        }
+nav{
+    text-align:center;
+}
 
-    </style>
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#324fd6;
+}
+
+h2{
+    text-align:center;
+    color:white;
+    margin:30px 0;
+    font-size:40px;
+}
+
+.Main{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.Main h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#324fd6;
+}
+
+.btnn{
+    text-align:center;
+}
+
+.btn{
+    background:gold;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+footer{
+    margin-top:20px;
+    text-align:center;
+    color:white;
+    background:#2c1035;
+    padding:20px;
+    border-radius:10px;
+}
+
+</style>
 </head>
+
 <body>
-    <header class="top">
-        <nav>
-            <a href="Login.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Login.html">Login</a>
-            
-        </nav>
-    </header>
 
-    
-        <h2> Signup </h2>
-        <section class="Main">
-        <h1> To Get Started Please!! Signup !!</h1>
-        <form action="index.html">
-            <label for="Fname">First Name:</label>
-            <input type="text" name="Fname"><br><br>
-            <label for="Lname">Last Name:</label>
-            <input type="text" name="Lname"><br><br>
-            <label for="Number">Number:</label>
-            <input type="number" name="number"><br><br>
-            <label for="email">Email:</label>
-            <input type="text" name="email"><br><br>
-            <label for="Address">Address:</label>
-            <input type="text" name="address"><br><br>
-            <label for="Designation">Designation:</label>
-            <input type="text" name="Designation">
-            <div class="btnn">
-                <button class="btn">Get Started</button>
-            </div>    
+<header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Login.html">Login</a>
+</nav>
+</header>
 
-        </form>    
-    
-        </section>
-    <br>
-    <footer>
-        <p>@Copyright 2026 Simple Webpage </p>
-    </footer>
+<h2>Signup</h2>
+
+<section class="Main">
+
+<h1>Create Account</h1>
+
+<form action="index.html">
+
+<label>First Name</label>
+<input type="text" placeholder="Enter First Name">
+
+<label>Last Name</label>
+<input type="text" placeholder="Enter Last Name">
+
+<label>Mobile Number</label>
+<input type="number" placeholder="Enter Mobile Number">
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email">
+
+<label>Address</label>
+<input type="text" placeholder="Enter Address">
+
+<label>Designation</label>
+<input type="text" placeholder="Enter Designation">
+
+<div class="btnn">
+<button class="btn">Get Started</button>
+</div>
+
+</form>
+
+</section>
+
+<footer>
+    <h3>Simple Website</h3>
+    <p>Designed By Noman</p>
+</footer>
+
 </body>
 </html>
